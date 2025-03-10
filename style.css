@@ -7,6 +7,19 @@ body {
     padding: 20px 60px 20px 60px;
 }
 
+.logo {
+    float: left;
+    gap: 40px;
+    display: flex;
+}
+
+.slanted-line {
+    width: 2px;
+    height: 55px;
+    background-color: #181818;
+    transform: rotate(30deg);
+}
+
 .nav ul{
     display: flex;
     overflow: hidden;
