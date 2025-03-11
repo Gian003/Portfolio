@@ -14,6 +14,14 @@ body {
     padding-left: 20px;
 }
 
+.slanted-rectangle {
+    width: 150px;
+    height: 55px;
+    border: 2px solid #181818;
+    border-style: solid;
+    transform: skewx(-30deg);
+}
+
 .slanted-line {
     width: 2px;
     height: 55px;
