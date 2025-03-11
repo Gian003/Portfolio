@@ -51,3 +51,7 @@ nav ul li {
     font-style: regular;
     font-size: 24px;
 }
+
+.content_body {
+    padding: 20px 60px 20px 60px;
+}
