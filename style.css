@@ -15,7 +15,7 @@ body {
 }
 
 .slanted-rectangle {
-    width: 150px;
+    width: 100px;
     height: 50px;
     border: 2px solid #181818;
     border-style: solid;
@@ -53,5 +53,24 @@ nav ul li {
 }
 
 .content_body {
-    padding: 20px 60px 20px 60px;
+    padding: 100px 70px 100px 70px;
+    line-height: 20px;
+}
+
+#header {
+    color: #181818;
+    font-size: 64px;
+    font-style: regular;
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+    font-style: regular;
+    color: #181818;
+}
+
+.content_body a {
+    color: #181818;
+    text-decoration: none;
 }
