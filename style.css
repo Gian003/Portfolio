@@ -83,7 +83,7 @@ p {
     text-decoration: none;
 }
 
-.button {
+.readmore_button {
     height: 70px;
     width: 180px;
     border-radius: 35px;
@@ -91,11 +91,16 @@ p {
     background-color: #181818;
 }
 
-.button a {
+.readmore_button a {
     color: #F7F7F2; 
     text-align: center;
     text-decoration: underline;
     font-family: consolas;
     font-size: 18px;
     font-style: regular;
+}
+
+.readmore_button .button-icon {
+    width: 20px;
+    height: 20px;
 }
