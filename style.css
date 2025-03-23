@@ -85,10 +85,11 @@ p {
 
 .readmore_button {
     height: 70px;
-    width: 180px;
+    width: 185px;
     border-radius: 35px;
     margin-top: 60px;
     background-color: #181818;
+    display: flexbox;
 }
 
 .readmore_button a {
@@ -98,6 +99,7 @@ p {
     font-family: consolas;
     font-size: 18px;
     font-style: regular;
+    margin-right: 3px;
 }
 
 .readmore_button .button-icon {
