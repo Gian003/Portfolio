@@ -1,6 +1,6 @@
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 300px; /* Content takes remaining space, profile fixed width */
+    grid-template-columns: 1fr 300px;
     gap: 40px;
     padding: 50px 70px;
     min-height: 700px;
@@ -26,12 +26,12 @@
 .profile {
     position: sticky;
     top: 100px;
-    align-self: start; /* Aligns at the top */
+    align-self: start;
 }
 
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 300px; /* Content takes remaining space, profile fixed width */
+    grid-template-columns: 1fr 300px;
     gap: 40px;
     padding: 50px 70px;
     min-height: 700px;
@@ -41,5 +41,5 @@
 .profile {
     position: sticky;
     top: 100px;
-    align-self: start; /* Aligns at the top */
+    align-self: start;
 }

@@ -14,24 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const folderId = folder.getAttribute('data-folder');
             const images = folders[folderId];
             
-            // Clear content but keep structure
             content.innerHTML = '<button id="closeOverlay">Close</button>';
-            
-            // Add images
+
             images.forEach(img => {
                 const imgEl = document.createElement('img');
                 imgEl.src = img;
                 imgEl.alt = "Gallery image";
                 content.insertBefore(imgEl, content.firstChild);
             });
-            
-            // Show overlay
+
             overlay.classList.add('overlay-visible');
             overlay.classList.remove('overlay-hidden');
         });
     });
 
-    // Close overlay (using event delegation)
     document.addEventListener('click', (e) => {
         if (e.target.id === 'closeOverlay') {
             overlay.classList.remove('overlay-visible');
