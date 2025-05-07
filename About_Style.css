@@ -1,10 +1,10 @@
-
-.content_body {
-    position: relative;
-    padding: 50px 70px 50px 70px;
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Content takes remaining space, profile fixed width */
+    gap: 40px;
+    padding: 50px 70px;
     min-height: 700px;
     margin-top: 10px;
-    line-height: 20px;
 }
 
 .content_body .About_word {
@@ -17,25 +17,29 @@
     line-height: normal;
 }
 
-.content_body .About_life {
-    position: relative;
-    width: 645px;
-    height: 100%;
-    flex-shrink: 0;
-    margin-bottom: 20px;
-}
-
 .content_body .About_life p{
     color: #181818;
     font-size: 20px;
     font-style: normal;
 }
 
-.content_body .profile svg{
-    display: flex;
-    align-items: flex-start;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-    margin-left: 20px;
-    width: 150px;
-    height: auto; 
+.profile {
+    position: sticky;
+    top: 100px;
+    align-self: start; /* Aligns at the top */
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Content takes remaining space, profile fixed width */
+    gap: 40px;
+    padding: 50px 70px;
+    min-height: 700px;
+    margin-top: 10px;
+}
+
+.profile {
+    position: sticky;
+    top: 100px;
+    align-self: start; /* Aligns at the top */
 }
