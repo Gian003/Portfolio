@@ -10,10 +10,11 @@
 }
 
 .folder {
+    flex: 1 1 calc(33.333% - 20px);
     width: 100%;
     max-width: 612px;
     height: auto;
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
@@ -57,18 +58,18 @@
 
 .overlay-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 90%;
-    max-height: 90%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90vh;
+    height: auto;
 }
 
 .overlay-content img {
@@ -78,9 +79,15 @@
     display: block;
 }
 
+.overlay-layout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
 #closeOverlay {
-    margin-top: 20px;
-    padding: 10px 20px;
     background-color: #f44336;
     color: white;
     border: none;
