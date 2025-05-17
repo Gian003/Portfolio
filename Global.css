@@ -13,11 +13,12 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 40px;
-    padding-left: 20px;
+    gap: 5vw;
+    padding-left: 2vw;
 }
 
 .slanted-rectangle {
+    width: 20vw;
     width: 150px;
     height: 50px;
     border: 2px solid #181818;
@@ -28,6 +29,7 @@ body {
 }
 
 .slanted-line {
+    width: 0.3vw;
     width: 2px;
     height: 55px;
     background-color: #000;
@@ -37,7 +39,7 @@ body {
 }
 
 .nav {
-    position: relative; /* Set position to relative for absolute positioning of the line */
+    position: relative;
 }
 
 .nav ul {
@@ -76,4 +78,72 @@ nav ul li {
 
 .nav a:hover::after {
     transform: translateY(0);
+}
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .overlay-content {
+    width: 95%;
+    padding: 10px;
+  }
+  #closeOverlay {
+    width: 100%;
+  }
+
+  .slanted-rectangle {
+    width: 60vw;
+    height: 10vw;
+  }
+
+  .slanted-line {
+    height: 8vw;
+  }
+}
+
+/* Small devices (phones, landscape and small tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .slanted-rectangle {
+    width: 40vw;
+    height: 8vw;
+  }
+
+  .slanted-line {
+    height: 7vw;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+  .overlay-content {
+    width: 80%;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (large desktops, TVs) */
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1140px;
+  }
 }
