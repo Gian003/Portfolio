@@ -32,94 +32,148 @@
 
     <div class="container">
         <h1 id="form-title">Personal Information</h1>
-        <div class="form-wrapper">
-             <form action="Personal.php" method="post">
-                <div class="input-name-section">
+    <div class="form-wrapper">
+        <form action="Personal.php" method="post">
+            <!-- Name Section -->
+            <div class="form-section">
+                <h2> Personal Details</h2>
+                <div class="input-name-container">
+
                     <div class="input-container">
-                        <label>Last Name</label><br>
-                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                        <input type="text" id="fname" name="fname" required>
+                        <label>First Name</label>
                     </div>
 
                     <div class="input-container">
-                        <label>First Name</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                        <input type="text" id="lname" name="lname" required>
+                        <label>Last Name</label>
                     </div>
 
                     <div class="input-container">
-                        <label>Middle Name</label><br>
-                        <input type="text" id="mname" name="mname" placeholder="Middle Name" required>
+                        <input type="text" id="mname" name="mname" required>
+                        <label>Middle Name</label>
                     </div>
 
                     <div class="input-container">
-                        <label>Suffix</label><br>
-                        <input type="text" id="sname" name="sname" placeholder="Suffix">
-                    </div>
-                </div>
-
-                <div class="input-address-section">
-                    <label id="address-label">Residential Address</label>
-                    <div class="input-address-container">
-                        <div class="input-container">
-                            <input type="text" id="houseno" name="houseno" placeholder="House No." required>
-                            <label>House No.</label>
-                        </div>
-
-                        <div class="input-container">
-                            <input type="text" id="street" name="street" placeholder="Street" required>
-                            <label>Street</label>
-                        </div>
-
-                        <div class="input-container">
-                            <input type="text" id="barangay" name="barangay" placeholder="Barangay" required>
-                            <label>Barangay</label>
-                        </div>
-
-                        <div class="input-container">
-                            <input type="text" id="city_town" name="city_town" placeholder="City/Town" required>
-                            <label>City/Town</label>
-                        </div>
-
-                        <div class="input-container">
-                            <input type="text" id="province" name="province" placeholder="Province" required>
-                            <label>Province</label>
-                        </div>
-
-                        <div class="input-container">
-                            <input type="text" id="zip_code" name="zip_code" placeholder="Zip Code" required>
-                            <label>Zip Code</label>
-                        </div>
+                        <input type="text" id="sname" name="sname">
+                        <label>Suffix</label>
                     </div>
                 </div>
+            </div>
 
-                <div class="input-identity-section">
+            <!-- Address Section -->
+            <div class="form-section">
+                <h2>Address Information</h2>
+                <div class="input-address-container">
+
                     <div class="input-container">
-                        <div class="gender-container">
-                            <label id="gender-label">Gender</label>
+                        <input type="text" id="houseno" name="houseno" required>
+                        <label>House No.</label>
+                    </div>
 
-                            <div class="radio-container">
-                                <input type="radio" id="male" name="gender" value="male" required>
-                                <label>Male</label>
-                            </div>
+                    <div class="input-container">
+                        <input type="text" id="street" name="street" required>
+                        <label>Street</label>
+                    </div>
 
-                            <div class="radio-container">
-                                <input type="radio" id="female" name="gender" value="female" required>
-                                <label>Female</label>
-                            </div>
+                    <div class="input-container">
+                        <input type="text" id="barangay" name="barangay" required>
+                        <label>Barangay</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" id="city_town" name="city_town" required>
+                        <label>City/Town</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" id="province" name="province" required>
+                        <label>Province</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" id="zip_code" name="zip_code" required>
+                        <label>Zip Code</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Info Section -->
+            <div class="form-section">
+                <h2> Additional Information</h2>
+                <div class="input-identity-container">
+
+                    <div class="radio-group">
+                        <label>Gender</label>
+
+                        <div class="radio-options">
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female" required> Female</label>
+                        </div>
+                    </div>
+
+                    <div class="radio-group">
+                        <label>Civil Status</label>
+
+                        <div class="radio-options">
+                            <label><input type="radio" name="civil_status" value="single" required> Single</label>
+                            <label><input type="radio" name="civil_status" value="married" required> Married</label>
+                            <label><input type="radio" name="civil_status" value="separated" required> Separated</label>
+                            <label><input type="radio" name="civil_status" value="widowed" required> Widowed</label>
                         </div>
                     </div>
 
                     <div class="input-container">
+                        <input type="date" id="birthdate" name="birthdate" required>
                         <label>Date of Birth</label>
-                        <input type="date" id="date" name="date" required>
                     </div>
 
                     <div class="input-container">
+                        <input type="text" id="birthplace" name="birthplace" required>
                         <label>Place of Birth</label>
-                        <input type="text" id="place" name="place" placeholder="Place of Birth" required>
                     </div>
                 </div>
-            </form>
-        </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="form-section">
+                <h2>Contact Information</h2>
+
+                <div class="input-contact-container">
+                    <div class="input-container">
+                        <input type="tel" name="cellphone" pattern="^(\+63|0)?\d{10}$" required>
+                        <label>Cellphone No.</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" name="telephone" pattern="^0\d{9,10}$" required>
+                        <label>Telephone No.</label>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="text" id="citizenship" name="citizenship" required>
+                        <label>Citizenship</label>
+                    </div>
+
+                    <div class="input-container full-width">
+                        <input type="email" id="email" name="email" required>
+                        <label>Email Address</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <div>
+                    <button type="button" class="btn records">View Records</button>
+                </div>
+
+                <div class="btn-container">
+                    <button type="reset" class="btn secondary">Clear</button>
+                    <button type="submit" class="btn primary">Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
+</div>
 </body>
 </html>

@@ -1,92 +1,129 @@
-#form-title{
+h1 {
     color: whitesmoke;
     text-align: center;
 }
 
-input {
-    padding: 10px;
-    width: 90%;
-    border-radius: 12px;
-}
-
-label {
-    color: whitesmoke;
-    font-size: 15px;
-    padding-left: 2px;
-}
-
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px auto;
-    width: 90%;
     max-width: 1000px;
-    background-color: #313030;
-    padding: 20px;
-    border-radius: 10px;
-}
-.form-wrapper {
-    width: 100%;
+    margin: 10px auto;
+    padding: 25px;
+    background: #2a2a2a;
+    border-radius: 15px;
 }
 
-form {
-    width: 100%;
+.form-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #363636;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+h2 {
+    color: whitesmoke;
+    text-align: left;
+}
+
+.input-name-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.input-name-section {
-    display: flex;
-    width: 100%;
-}
-
-.input-container {
-    flex: 1;
-    padding: 10px;
-}
-
-.input-address-section {
-    display: flex;
-    flex-direction: column;
+    gap: 45px;
+    justify-content: flex-start;
 }
 
 .input-address-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: flex-start;
+}
+
+.input-container {
+    position: relative;
+    margin: 5px 0;
+}
+
+.input-container input {
     width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background: #444;
+    color: #fff;
 }
 
-#address-label{
+.input-container label {
+    position: absolute;
     color: whitesmoke;
-    font-size: 15px;
-    margin-left: 10px;
+    margin: 5px;
 }
 
-
-.input-identity-section {
+.input-identity-container {
     display: flex;
     flex-direction: row;
-    width: auto;
-    height: auto;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: flex-start;
 }
 
-.gender-container {
+.radio-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+    gap: 0.5rem;
+    color: #fff;
 }
 
-#gender-label{
-    color: whitesmoke;
-    font-size: 15px;
+.radio-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.radio-container {
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.input-contact-container {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: flex-start;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.records {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 715px;
+}
+
+.btn.primary {
+    background: whitesmoke;
+    color: #181818;
+}
+
+.btn.secondary {
+    background: #666;
+    color: white;
 }
