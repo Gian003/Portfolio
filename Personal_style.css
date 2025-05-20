@@ -104,7 +104,7 @@ h2 {
 }
 
 .btn {
-    padding: 15px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -116,6 +116,12 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 715px;
+}
+
+.btn.records a {
+    text-decoration: none;
+    overflow: hidden;
+    color: #181818;
 }
 
 .btn.primary {
