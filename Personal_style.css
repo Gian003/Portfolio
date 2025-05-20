@@ -1,3 +1,8 @@
+#form-title{
+    color: whitesmoke;
+    text-align: center;
+}
+
 input {
     padding: 10px;
     width: 90%;
@@ -21,12 +26,6 @@ label {
     padding: 20px;
     border-radius: 10px;
 }
-
-h1 {
-    color: whitesmoke;
-    text-align: center;
-}
-
 .form-wrapper {
     width: 100%;
 }
@@ -53,15 +52,41 @@ form {
     flex-direction: column;
 }
 
-.input-address-section h4{
-    color: whitesmoke;
-    font-size: 15px;
-    margin-left: 10px;
-}
-
 .input-address-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+}
+
+#address-label{
+    color: whitesmoke;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+.input-identity-section {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.gender-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#gender-label{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }

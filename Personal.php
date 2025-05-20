@@ -31,7 +31,7 @@
     </div>
 
     <div class="container">
-        <h1>Personal Information</h1>
+        <h1 id="form-title">Personal Information</h1>
         <div class="form-wrapper">
              <form action="Personal.php" method="post">
                 <div class="input-name-section">
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="input-address-section">
-                    <h4>Residential Address</h4>
+                    <label id="address-label">Residential Address</label>
                     <div class="input-address-container">
                         <div class="input-container">
                             <input type="text" id="houseno" name="houseno" placeholder="House No." required>
@@ -93,13 +93,29 @@
 
                 <div class="input-identity-section">
                     <div class="input-container">
-                        <label>Gender</label>
-                        <input type="radio" id="male" name="gender" value="male" required>Male
-                        <input type="radio" id="female" name="gender" value="female">Female
+                        <div class="gender-container">
+                            <label id="gender-label">Gender</label>
+
+                            <div class="radio-container">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label>Male</label>
+                            </div>
+
+                            <div class="radio-container">
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label>Female</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="input-birth-container">
+                    <div class="input-container">
+                        <label>Date of Birth</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
 
+                    <div class="input-container">
+                        <label>Place of Birth</label>
+                        <input type="text" id="place" name="place" placeholder="Place of Birth" required>
                     </div>
                 </div>
             </form>
