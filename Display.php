@@ -2,7 +2,7 @@
 session_start();
 include 'connect.php';
 
-$message = "";
+$message = '';
 if (isset($_SESSION['message'])) {
     $message = $_SESSION['message'];
     unset($_SESSION['message']);
@@ -18,8 +18,32 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <title>Display Page</title>
+    <link rel="stylesheet" href="Animation.css">
+    <link rel="stylesheet" type="text/css" href="Global.css">
+    <link rel="stylesheet" href="Display_Style.css">
 </head>
 <body>
+    <div class="nav_container">
+        <!--Logo-->
+        <div class="logo">
+            <div class="slanted-line"></div>
+            <div class="slanted-line"></div>
+            <div class="slanted-rectangle"></div>
+        </div>
+
+        <!--Navigation-->
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Personal.php">Personal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
     <h1>Display Page</h1><br>
     <a href="Personal.php">Add Record</a>
     <?php
@@ -27,7 +51,7 @@ $result = $conn->query($sql);
         echo "<p>$message</p>";
     }
     ?>
-    <table border="1">
+    <table>
         <tr>
             <th>Name</th>
             <th>Gender</th>
@@ -42,10 +66,10 @@ $result = $conn->query($sql);
                         <td>{$fullName}</td>
                         <td>{$row['Gender']}</td>
                         <td>{$row['Civil_Status']}</td>
-                        <td>
+                        <td class='action-links'>
                             <a href='view.php?id={$row['id']}'>View</a>
                             <a href='edit.php?id={$row['id']}'>Edit</a>
-                            <a href='delete.php?id={$row['id']}' onclick=\"return confirm('Are you sure you want to delete this record?')\">Delete</a>
+                            <a href='delete.php?id={$row['id']}' onclick='return confirm(\"Are you sure you want to delete this record?\")'>Delete</a>
                         </td>
                       </tr>";
             }

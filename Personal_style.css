@@ -115,7 +115,8 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 715px;
+    margin-right: 695px;
+    font-size: 15px;
 }
 
 .btn.records a {
@@ -127,9 +128,11 @@ h2 {
 .btn.primary {
     background: whitesmoke;
     color: #181818;
+    font-size: 15px;
 }
 
 .btn.secondary {
     background: #666;
     color: white;
+    font-size: 15px;
 }
